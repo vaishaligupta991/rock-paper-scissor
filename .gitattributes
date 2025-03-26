@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+import random
+def game():
+    comp=random.choice([1,2,3])
+    player_choice = input("enter your choice:\n1.rock\n2.paper\n3.scissor\n choose:")
+    youdict={"rock":1,"paper":2,"scissor":3}
+    you=youdict[player_choice]
+    if(comp==you):
+        print("draw")
+    else:
+        if(you-comp==1 or you-comp==-2):
+            print("you win:)")
+        else:
+            print("you loose:(")
+game()
+game()            
